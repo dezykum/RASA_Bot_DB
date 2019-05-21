@@ -1,0 +1,158 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "what's the employee details of John?",
+        "intent": "employee",
+        "entities": [
+          {
+            "start": 31,
+            "end": 35,
+            "value": "John",
+            "entity": "empname"
+          }
+        ]
+      },
+      {
+        "text": "what is the details of employee John?",
+        "intent": "employee",
+        "entities": [
+          {
+            "start": 32,
+            "end": 36,
+            "value": "John",
+            "entity": "empname"
+          }
+        ]
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "what is the weather in Bangalore?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "Bangalore",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "tell me the weather in Pune",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "Pune",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "tell me the detials of employee John",
+        "intent": "employee",
+        "entities": [
+          {
+            "start": 32,
+            "end": 36,
+            "value": "John",
+            "entity": "empname"
+          }
+        ]
+      },
+      {
+        "text": "give me the details of employee Andrew",
+        "intent": "employee",
+        "entities": [
+          {
+            "start": 32,
+            "end": 38,
+            "value": "Andrew",
+            "entity": "empname"
+          }
+        ]
+      },
+      {
+        "text": "what is the details of employee Andrew?",
+        "intent": "employee",
+        "entities": [
+          {
+            "start": 32,
+            "end": 38,
+            "value": "Andrew",
+            "entity": "empname"
+          }
+        ]
+      },
+      {
+        "text": "what is the details of employee Rohan?",
+        "intent": "employee",
+        "entities": [
+          {
+            "start": 32,
+            "end": 37,
+            "value": "Rohan",
+            "entity": "empname"
+          }
+        ]
+      },
+      {
+        "text": "show me the details of employee Raj",
+        "intent": "employee",
+        "entities": [
+          {
+            "start": 32,
+            "end": 35,
+            "value": "Raj",
+            "entity": "empname"
+          }
+        ]
+      },
+      {
+        "text": "please give me the details of employee Neha",
+        "intent": "employee",
+        "entities": [
+          {
+            "start": 39,
+            "end": 43,
+            "value": "Neha",
+            "entity": "empname"
+          }
+        ]
+      },
+      {
+        "text": "show me the details of employee Roger",
+        "intent": "employee",
+        "entities": [
+          {
+            "start": 32,
+            "end": 37,
+            "value": "Roger",
+            "entity": "empname"
+          }
+        ]
+      }
+    ]
+  }
+}

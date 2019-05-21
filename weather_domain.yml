@@ -1,0 +1,50 @@
+
+intents:
+    - greet
+    - goodbye
+    - inform
+    - employee
+
+entities:
+    - location
+    - empname
+    
+slots:
+    location:
+         type: text
+    empname:
+        type: text
+    
+templates:
+    utter_greet:
+        - 'Hello, how can I help you?'
+        - 'Hi, I am here to help.'
+    utter_goodbye:
+        - 'Talk to you later.'
+        - 'Bye bye :('
+    utter_inform:
+        - 'The temperature is 36 degree C, the humedity is 25% and the wind speed is 19km/h mph.'
+    utter_ask_employee:
+        - 'Tell me your name please'
+actions:
+    - utter_greet
+    - utter_goodbye
+    - utter_inform
+    - utter_ask_employee
+    - action_db
+      
+    
+
+policies:
+    - 'KerasPolicy'
+    - 'MemoizationPolicy'
+
+tracker_store:
+    type: SQL
+    dialect: "sqlite"  # the dialect used to interact with the db
+    url: "localhost"  # (optional) host of the sql db
+    db: "mydatabase.db"  # path to your db
+    username:  # username used for authentication
+    password:  # password used for authentication
+
+    

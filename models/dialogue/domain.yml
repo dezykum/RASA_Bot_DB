@@ -1,0 +1,44 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- utter_inform
+- utter_ask_employee
+- action_db
+config:
+  store_entities_as_slots: true
+entities:
+- location
+- empname
+forms: []
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- inform:
+    use_entities: true
+- employee:
+    use_entities: true
+slots:
+  empname:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_employee:
+  - text: Tell me your name please
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+  utter_greet:
+  - text: Hello, how can I help you?
+  - text: Hi, I am here to help.
+  utter_inform:
+  - text: The temperature is 36 degree C, the humedity is 25% and the wind speed is
+      19km/h mph.

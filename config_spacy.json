@@ -1,0 +1,10 @@
+
+{
+    "pipeline" : "spacy_sklearn",
+    "spacy_model_name": "en_core_web_md",
+    
+    "path" : "./models/nlu",
+    "data" : "./data/data.json"
+}
+
+
